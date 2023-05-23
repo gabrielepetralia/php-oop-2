@@ -1,0 +1,11 @@
+body {
+  background-image: url('../img/bg-pet.png');
+  background-size: 50rem;
+}
+
+.gp-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: calc(100vh - 152px);
+}
