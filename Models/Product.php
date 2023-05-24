@@ -1,12 +1,14 @@
 <?php 
 
 class Product {
+  private $prod_img;
   private $pet_category;
   private $category_name;
   private $prod_name;
   private $price;
 
-  function __construct($_pet_category, $_category_name, $_name, $_price) {
+  function __construct($_prod_img, $_pet_category, $_category_name, $_name, $_price) {
+    $this->setProdImg($_prod_img);
     $this->setPetCategory($_pet_category);
     $this->setCategoryName($_category_name);
     $this->setProdName($_name);
@@ -14,6 +16,11 @@ class Product {
   }
 
   // Setter
+  public function setProdImg($_prod_img)
+  {
+    $this->prod_img = $_prod_img;
+  }
+
   public function setPetCategory($_pet_category) {
     $this->pet_category = $_pet_category;
   }
@@ -32,6 +39,11 @@ class Product {
   }
 
   // Getter
+  public function getProdImg()
+  {
+    return $this->prod_img;
+  }
+
   public function getPetCategory() {
     return $this->pet_category;
   }
