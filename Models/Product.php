@@ -7,11 +7,11 @@ class Product {
   private $prod_name;
   private $price;
 
-  function __construct($_prod_img, $_pet_category, $_category_name, $_name, $_price) {
+  function __construct($_prod_img, $_pet_category, $_category_name, $_prod_name, $_price) {
     $this->setProdImg($_prod_img);
     $this->setPetCategory($_pet_category);
     $this->setCategoryName($_category_name);
-    $this->setProdName($_name);
+    $this->setProdName($_prod_name);
     $this->setPrice($_price);
   }
 

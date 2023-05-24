@@ -6,8 +6,8 @@ class Toy extends Product {
   private $characteristics;
   private $size;
 
-  function __construct($_prod_img, $_pet_category, $_category_name, $_name, $_price, $_characteristics, $_size) {
-    parent::__construct($_prod_img, $_pet_category, $_category_name, $_name, $_price);
+  function __construct($_prod_img, $_pet_category, $_category_name, $_prod_name, $_price, $_characteristics, $_size) {
+    parent::__construct($_prod_img, $_pet_category, $_category_name, $_prod_name, $_price);
     $this->setCaracteristics($_characteristics);
     $this->setSize($_size);
   }
